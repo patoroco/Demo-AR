@@ -24,20 +24,20 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MixareAppDelegate.h"
+#import "JOAppDelegate.h"
 
 @interface ProgressHUD : UIAlertView {
     UIActivityIndicatorView *activityIndicator;
     UILabel *progressMessage;
     UIImageView *backgroundImageView;
     
-    MixareAppDelegate *__weak appDelegate;
+    JOAppDelegate *__weak appDelegate;
 }
 
 @property (nonatomic) UIActivityIndicatorView *activityIndicator;
 @property (nonatomic, strong) UILabel *progressMessage;
 @property (nonatomic) UIImageView *backgroundImageView;
-@property (nonatomic, weak) MixareAppDelegate *appDelegate;
+@property (nonatomic, weak) JOAppDelegate *appDelegate;
 
 - (id)initWithLabel:(NSString *)text;
 - (void)show;

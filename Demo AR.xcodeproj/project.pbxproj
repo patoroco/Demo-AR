@@ -51,6 +51,13 @@
 		B91A216617943EE100BCAF21 /* twitter_logo_small.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A215417943EE100BCAF21 /* twitter_logo_small.png */; };
 		B91A216717943EE100BCAF21 /* wikipedia_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A215517943EE100BCAF21 /* wikipedia_logo.png */; };
 		B91A216817943EE100BCAF21 /* wikipedia_logo_small.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A215617943EE100BCAF21 /* wikipedia_logo_small.png */; };
+		B91A216A17943F6B00BCAF21 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91A216917943F6B00BCAF21 /* AVFoundation.framework */; };
+		B91A216C17943F7500BCAF21 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91A216B17943F7500BCAF21 /* MapKit.framework */; };
+		B91A216E17943F8B00BCAF21 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91A216D17943F8B00BCAF21 /* QuartzCore.framework */; };
+		B91A217017943FAC00BCAF21 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91A216F17943FAC00BCAF21 /* CoreMotion.framework */; };
+		B91A217217943FB200BCAF21 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91A217117943FB200BCAF21 /* CoreMedia.framework */; };
+		B91A217417943FD100BCAF21 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91A217317943FD100BCAF21 /* CoreVideo.framework */; };
+		B91A217617943FDA00BCAF21 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91A217517943FDA00BCAF21 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +124,13 @@
 		B91A215417943EE100BCAF21 /* twitter_logo_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_logo_small.png; sourceTree = "<group>"; };
 		B91A215517943EE100BCAF21 /* wikipedia_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wikipedia_logo.png; sourceTree = "<group>"; };
 		B91A215617943EE100BCAF21 /* wikipedia_logo_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wikipedia_logo_small.png; sourceTree = "<group>"; };
+		B91A216917943F6B00BCAF21 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B91A216B17943F7500BCAF21 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B91A216D17943F8B00BCAF21 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B91A216F17943FAC00BCAF21 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B91A217117943FB200BCAF21 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B91A217317943FD100BCAF21 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		B91A217517943FDA00BCAF21 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +138,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91A217617943FDA00BCAF21 /* CoreLocation.framework in Frameworks */,
+				B91A217417943FD100BCAF21 /* CoreVideo.framework in Frameworks */,
+				B91A217217943FB200BCAF21 /* CoreMedia.framework in Frameworks */,
+				B91A217017943FAC00BCAF21 /* CoreMotion.framework in Frameworks */,
+				B91A216E17943F8B00BCAF21 /* QuartzCore.framework in Frameworks */,
+				B91A216C17943F7500BCAF21 /* MapKit.framework in Frameworks */,
+				B91A216A17943F6B00BCAF21 /* AVFoundation.framework in Frameworks */,
 				B91A20EF17943DB500BCAF21 /* UIKit.framework in Frameworks */,
 				B91A20F117943DB500BCAF21 /* Foundation.framework in Frameworks */,
 				B91A20F317943DB500BCAF21 /* CoreGraphics.framework in Frameworks */,
@@ -153,6 +174,13 @@
 		B91A20ED17943DB500BCAF21 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B91A217517943FDA00BCAF21 /* CoreLocation.framework */,
+				B91A217317943FD100BCAF21 /* CoreVideo.framework */,
+				B91A217117943FB200BCAF21 /* CoreMedia.framework */,
+				B91A216F17943FAC00BCAF21 /* CoreMotion.framework */,
+				B91A216D17943F8B00BCAF21 /* QuartzCore.framework */,
+				B91A216B17943F7500BCAF21 /* MapKit.framework */,
+				B91A216917943F6B00BCAF21 /* AVFoundation.framework */,
 				B91A20EE17943DB500BCAF21 /* UIKit.framework */,
 				B91A20F017943DB500BCAF21 /* Foundation.framework */,
 				B91A20F217943DB500BCAF21 /* CoreGraphics.framework */,

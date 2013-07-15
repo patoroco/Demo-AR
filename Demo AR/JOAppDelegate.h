@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@class JOViewController;
+#import <CoreLocation/CoreLocation.h>
+@class AugmentedViewController;
 
 @interface JOAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) JOViewController *viewController;
-
+@property (strong, nonatomic) AugmentedViewController *augViewController;
+@property (strong, nonatomic) CLLocationManager *locationManager;
 @end

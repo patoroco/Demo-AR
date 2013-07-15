@@ -25,7 +25,7 @@
 
 #import "PopUpWebView.h"
 #import "ProgressHUD.h"
-#import "Resources.h"
+//#import "Resources.h"
 
 @implementation PopUpWebView
 
@@ -34,7 +34,7 @@ static ProgressHUD *hud;
 - (id)initWithMainView:(UIView*)view padding:(int)pad isTabbar:(BOOL)tab rightRotateable:(BOOL)rotate alpha:(float)alp {
     self = [super init];
     if (self) {
-        hud = [[ProgressHUD alloc] initWithLabel:NSLocalizedStringFromTableInBundle(@"Loading...", @"Localizable", [[Resources getInstance] bundle], @"")];
+        hud = [[ProgressHUD alloc] initWithLabel:NSLocalizedStringFromTableInBundle(@"Loading...", @"Localizable", [NSBundle mainBundle], @"")];
         alpha = alp;
         mainView = view;
         rotateable = rotate;

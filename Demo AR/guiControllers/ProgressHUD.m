@@ -24,7 +24,7 @@
 //
 
 #import "ProgressHUD.h"
-#import "Resources.h"
+//#import "Resources.h"
 
 @implementation ProgressHUD
 
@@ -33,9 +33,9 @@
 - (id)initWithLabel:(NSString *)text {
     self = [super init];
     if (self) {
-        self.appDelegate = (MixareAppDelegate *)[[UIApplication sharedApplication] delegate];
+        self.appDelegate = (JOAppDelegate *)[[UIApplication sharedApplication] delegate];
 		
-		backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:[[[Resources getInstance] bundle] pathForResource:@"HUDBackground" ofType:@"png"]] ];
+		backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"HUDBackground" ofType:@"png"]] ];
 		backgroundImageView.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin);
 		[self addSubview:backgroundImageView];
         
