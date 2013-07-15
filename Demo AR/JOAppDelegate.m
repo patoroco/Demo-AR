@@ -82,7 +82,7 @@
 - (void)openARView {
     _augViewController = [[AugmentedGeoViewController alloc] initWithLocationManager:_locationManager];
 //    if (_dataSourceManager.dataSources != nil) {
-//        [_augViewController refresh:[_dataSourceManager getActivatedSources]];
+//        [_azzugViewController refresh:[_dataSourceManager getActivatedSources]];
 //    }
 //
     _augViewController.centerLocation = _locationManager.location;
