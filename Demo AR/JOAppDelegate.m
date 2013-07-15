@@ -18,11 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    _locationManager = [[CLLocationManager alloc] init];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     [self openARView];
     
     self.window.rootViewController = self.augViewController;
+    [self addPoisToView];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -82,9 +85,16 @@
 //        [_augViewController refresh:[_dataSourceManager getActivatedSources]];
 //    }
 //
-//    _augViewController.centerLocation = _locationManager.location;
+    _augViewController.centerLocation = _locationManager.location;
     [self initControls];
     self.window.rootViewController = _augViewController;
 }
 
+
+-(void)addPoisToView{
+    Position *posicionPalencia = [[Position alloc] initWithTitle:@"Palencia" withSummary:@"sumary" withUrl:nil withLatitude:0 withLongitude:0 withAltitude:0 withSource:nil];
+//    40.635255,-5.961456
+    PoiItem *poiPalencia = [[PoiItem alloc] initWithLatitude:40.635255 longitude:-5.961456 altitude:700 position:posicionPalencia];
+    [self.augViewController addCoordinate:poiPalencia];
+}
 @end

@@ -90,7 +90,7 @@
 
 - (void)setViewToPortrait;
 - (void)setViewToLandscape;
-
+- (void)addCoordinate:(PoiItem*)coordinate;
 
 
 @end

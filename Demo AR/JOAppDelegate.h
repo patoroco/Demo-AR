@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
-@class AugmentedViewController;
+@class AugmentedGeoViewController;
 
 @interface JOAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) AugmentedViewController *augViewController;
+@property (strong, nonatomic) AugmentedGeoViewController *augViewController;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @end
