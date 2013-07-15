@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B91A20EF17943DB500BCAF21 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91A20EE17943DB500BCAF21 /* UIKit.framework */; };
+		B91A20F117943DB500BCAF21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91A20F017943DB500BCAF21 /* Foundation.framework */; };
+		B91A20F317943DB500BCAF21 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91A20F217943DB500BCAF21 /* CoreGraphics.framework */; };
+		B91A20F917943DB500BCAF21 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B91A20F717943DB500BCAF21 /* InfoPlist.strings */; };
+		B91A20FB17943DB500BCAF21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A20FA17943DB500BCAF21 /* main.m */; };
+		B91A20FF17943DB600BCAF21 /* JOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A20FE17943DB600BCAF21 /* JOAppDelegate.m */; };
+		B91A210117943DB600BCAF21 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A210017943DB600BCAF21 /* Default.png */; };
+		B91A210317943DB600BCAF21 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A210217943DB600BCAF21 /* Default@2x.png */; };
+		B91A210517943DB600BCAF21 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A210417943DB600BCAF21 /* Default-568h@2x.png */; };
+		B91A210817943DB600BCAF21 /* JOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A210717943DB600BCAF21 /* JOViewController.m */; };
+		B91A210B17943DB600BCAF21 /* JOViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B91A210917943DB600BCAF21 /* JOViewController_iPhone.xib */; };
+		B91A210E17943DB600BCAF21 /* JOViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B91A210C17943DB600BCAF21 /* JOViewController_iPad.xib */; };
+		B91A212217943E1A00BCAF21 /* AugmentedGeoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A211617943E1A00BCAF21 /* AugmentedGeoViewController.m */; };
+		B91A212317943E1A00BCAF21 /* AugmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A211817943E1A00BCAF21 /* AugmentedViewController.m */; };
+		B91A212417943E1A00BCAF21 /* CameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A211A17943E1A00BCAF21 /* CameraController.m */; };
+		B91A212517943E1A00BCAF21 /* MarkerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A211C17943E1A00BCAF21 /* MarkerView.m */; };
+		B91A212617943E1A00BCAF21 /* Radar.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A211F17943E1A00BCAF21 /* Radar.m */; };
+		B91A212717943E1A00BCAF21 /* RadarViewPortView.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A212117943E1A00BCAF21 /* RadarViewPortView.m */; };
+		B91A213117943E6D00BCAF21 /* PopUpWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A212A17943E6D00BCAF21 /* PopUpWebView.m */; };
+		B91A213217943E6D00BCAF21 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A212C17943E6D00BCAF21 /* ProgressHUD.m */; };
+		B91A213317943E6D00BCAF21 /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A212E17943E6D00BCAF21 /* PullRefreshTableViewController.m */; };
+		B91A213417943E6D00BCAF21 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A213017943E6D00BCAF21 /* WebViewController.m */; };
+		B91A213A17943E9600BCAF21 /* MapViewAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A213717943E9600BCAF21 /* MapViewAnnotation.m */; };
+		B91A213B17943E9600BCAF21 /* PoiItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A213917943E9600BCAF21 /* PoiItem.m */; };
+		B91A214117943EA900BCAF21 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A213E17943EA900BCAF21 /* DataSource.m */; };
+		B91A214217943EA900BCAF21 /* Position.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A214017943EA900BCAF21 /* Position.m */; };
+		B91A215717943EE100BCAF21 /* buzz_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A214417943EE100BCAF21 /* buzz_logo.png */; };
+		B91A215817943EE100BCAF21 /* buzz_logo_small.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A214517943EE100BCAF21 /* buzz_logo_small.png */; };
+		B91A215917943EE100BCAF21 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A214617943EE100BCAF21 /* circle.png */; };
+		B91A215A17943EE100BCAF21 /* HUDBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A214717943EE100BCAF21 /* HUDBackground.png */; };
+		B91A215B17943EE100BCAF21 /* icon_map.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A214817943EE100BCAF21 /* icon_map.png */; };
+		B91A215C17943EE100BCAF21 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A214917943EE100BCAF21 /* logo.png */; };
+		B91A215D17943EE100BCAF21 /* logo_mixare_round.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A214A17943EE100BCAF21 /* logo_mixare_round.png */; };
+		B91A215E17943EE100BCAF21 /* mixare_512x512px.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A214B17943EE100BCAF21 /* mixare_512x512px.png */; };
+		B91A215F17943EE100BCAF21 /* mixare_button.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A214C17943EE100BCAF21 /* mixare_button.png */; };
+		B91A216017943EE100BCAF21 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A214E17943EE100BCAF21 /* camera.png */; };
+		B91A216117943EE100BCAF21 /* icon_datasource.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A214F17943EE100BCAF21 /* icon_datasource.png */; };
+		B91A216217943EE100BCAF21 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A215017943EE100BCAF21 /* list.png */; };
+		B91A216317943EE100BCAF21 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A215117943EE100BCAF21 /* map.png */; };
+		B91A216417943EE100BCAF21 /* source.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A215217943EE100BCAF21 /* source.png */; };
+		B91A216517943EE100BCAF21 /* twitter_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A215317943EE100BCAF21 /* twitter_logo.png */; };
+		B91A216617943EE100BCAF21 /* twitter_logo_small.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A215417943EE100BCAF21 /* twitter_logo_small.png */; };
+		B91A216717943EE100BCAF21 /* wikipedia_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A215517943EE100BCAF21 /* wikipedia_logo.png */; };
+		B91A216817943EE100BCAF21 /* wikipedia_logo_small.png in Resources */ = {isa = PBXBuildFile; fileRef = B91A215617943EE100BCAF21 /* wikipedia_logo_small.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B91A20EB17943DB500BCAF21 /* Demo AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B91A20EE17943DB500BCAF21 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B91A20F017943DB500BCAF21 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B91A20F217943DB500BCAF21 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B91A20F617943DB500BCAF21 /* Demo AR-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo AR-Info.plist"; sourceTree = "<group>"; };
+		B91A20F817943DB500BCAF21 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B91A20FA17943DB500BCAF21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B91A20FC17943DB600BCAF21 /* Demo AR-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo AR-Prefix.pch"; sourceTree = "<group>"; };
+		B91A20FD17943DB600BCAF21 /* JOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JOAppDelegate.h; sourceTree = "<group>"; };
+		B91A20FE17943DB600BCAF21 /* JOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JOAppDelegate.m; sourceTree = "<group>"; };
+		B91A210017943DB600BCAF21 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B91A210217943DB600BCAF21 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B91A210417943DB600BCAF21 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B91A210617943DB600BCAF21 /* JOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JOViewController.h; sourceTree = "<group>"; };
+		B91A210717943DB600BCAF21 /* JOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JOViewController.m; sourceTree = "<group>"; };
+		B91A210A17943DB600BCAF21 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JOViewController_iPhone.xib; sourceTree = "<group>"; };
+		B91A210D17943DB600BCAF21 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JOViewController_iPad.xib; sourceTree = "<group>"; };
+		B91A211517943E1A00BCAF21 /* AugmentedGeoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AugmentedGeoViewController.h; sourceTree = "<group>"; };
+		B91A211617943E1A00BCAF21 /* AugmentedGeoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AugmentedGeoViewController.m; sourceTree = "<group>"; };
+		B91A211717943E1A00BCAF21 /* AugmentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AugmentedViewController.h; sourceTree = "<group>"; };
+		B91A211817943E1A00BCAF21 /* AugmentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AugmentedViewController.m; sourceTree = "<group>"; };
+		B91A211917943E1A00BCAF21 /* CameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraController.h; sourceTree = "<group>"; };
+		B91A211A17943E1A00BCAF21 /* CameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraController.m; sourceTree = "<group>"; };
+		B91A211B17943E1A00BCAF21 /* MarkerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerView.h; sourceTree = "<group>"; };
+		B91A211C17943E1A00BCAF21 /* MarkerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerView.m; sourceTree = "<group>"; };
+		B91A211E17943E1A00BCAF21 /* Radar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Radar.h; sourceTree = "<group>"; };
+		B91A211F17943E1A00BCAF21 /* Radar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Radar.m; sourceTree = "<group>"; };
+		B91A212017943E1A00BCAF21 /* RadarViewPortView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadarViewPortView.h; sourceTree = "<group>"; };
+		B91A212117943E1A00BCAF21 /* RadarViewPortView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadarViewPortView.m; sourceTree = "<group>"; };
+		B91A212917943E6D00BCAF21 /* PopUpWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpWebView.h; sourceTree = "<group>"; };
+		B91A212A17943E6D00BCAF21 /* PopUpWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpWebView.m; sourceTree = "<group>"; };
+		B91A212B17943E6D00BCAF21 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		B91A212C17943E6D00BCAF21 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		B91A212D17943E6D00BCAF21 /* PullRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullRefreshTableViewController.h; sourceTree = "<group>"; };
+		B91A212E17943E6D00BCAF21 /* PullRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullRefreshTableViewController.m; sourceTree = "<group>"; };
+		B91A212F17943E6D00BCAF21 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		B91A213017943E6D00BCAF21 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		B91A213617943E9600BCAF21 /* MapViewAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewAnnotation.h; sourceTree = "<group>"; };
+		B91A213717943E9600BCAF21 /* MapViewAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewAnnotation.m; sourceTree = "<group>"; };
+		B91A213817943E9600BCAF21 /* PoiItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiItem.h; sourceTree = "<group>"; };
+		B91A213917943E9600BCAF21 /* PoiItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiItem.m; sourceTree = "<group>"; };
+		B91A213D17943EA900BCAF21 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		B91A213E17943EA900BCAF21 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		B91A213F17943EA900BCAF21 /* Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Position.h; sourceTree = "<group>"; };
+		B91A214017943EA900BCAF21 /* Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Position.m; sourceTree = "<group>"; };
+		B91A214417943EE100BCAF21 /* buzz_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buzz_logo.png; sourceTree = "<group>"; };
+		B91A214517943EE100BCAF21 /* buzz_logo_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buzz_logo_small.png; sourceTree = "<group>"; };
+		B91A214617943EE100BCAF21 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		B91A214717943EE100BCAF21 /* HUDBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HUDBackground.png; sourceTree = "<group>"; };
+		B91A214817943EE100BCAF21 /* icon_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_map.png; sourceTree = "<group>"; };
+		B91A214917943EE100BCAF21 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		B91A214A17943EE100BCAF21 /* logo_mixare_round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_mixare_round.png; sourceTree = "<group>"; };
+		B91A214B17943EE100BCAF21 /* mixare_512x512px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mixare_512x512px.png; sourceTree = "<group>"; };
+		B91A214C17943EE100BCAF21 /* mixare_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mixare_button.png; sourceTree = "<group>"; };
+		B91A214E17943EE100BCAF21 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		B91A214F17943EE100BCAF21 /* icon_datasource.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_datasource.png; sourceTree = "<group>"; };
+		B91A215017943EE100BCAF21 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
+		B91A215117943EE100BCAF21 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		B91A215217943EE100BCAF21 /* source.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = source.png; sourceTree = "<group>"; };
+		B91A215317943EE100BCAF21 /* twitter_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_logo.png; sourceTree = "<group>"; };
+		B91A215417943EE100BCAF21 /* twitter_logo_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_logo_small.png; sourceTree = "<group>"; };
+		B91A215517943EE100BCAF21 /* wikipedia_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wikipedia_logo.png; sourceTree = "<group>"; };
+		B91A215617943EE100BCAF21 /* wikipedia_logo_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wikipedia_logo_small.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B91A20E817943DB500BCAF21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91A20EF17943DB500BCAF21 /* UIKit.framework in Frameworks */,
+				B91A20F117943DB500BCAF21 /* Foundation.framework in Frameworks */,
+				B91A20F317943DB500BCAF21 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B91A20E217943DB500BCAF21 = {
+			isa = PBXGroup;
+			children = (
+				B91A20F417943DB500BCAF21 /* Demo AR */,
+				B91A20ED17943DB500BCAF21 /* Frameworks */,
+				B91A20EC17943DB500BCAF21 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B91A20EC17943DB500BCAF21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B91A20EB17943DB500BCAF21 /* Demo AR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B91A20ED17943DB500BCAF21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B91A20EE17943DB500BCAF21 /* UIKit.framework */,
+				B91A20F017943DB500BCAF21 /* Foundation.framework */,
+				B91A20F217943DB500BCAF21 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B91A20F417943DB500BCAF21 /* Demo AR */ = {
+			isa = PBXGroup;
+			children = (
+				B91A214317943EE100BCAF21 /* images */,
+				B91A213C17943EA900BCAF21 /* data */,
+				B91A213517943E9600BCAF21 /* reality */,
+				B91A212817943E6D00BCAF21 /* guiControllers */,
+				B91A211417943E1A00BCAF21 /* augmentedView */,
+				B91A20FD17943DB600BCAF21 /* JOAppDelegate.h */,
+				B91A20FE17943DB600BCAF21 /* JOAppDelegate.m */,
+				B91A210617943DB600BCAF21 /* JOViewController.h */,
+				B91A210717943DB600BCAF21 /* JOViewController.m */,
+				B91A210917943DB600BCAF21 /* JOViewController_iPhone.xib */,
+				B91A210C17943DB600BCAF21 /* JOViewController_iPad.xib */,
+				B91A20F517943DB500BCAF21 /* Supporting Files */,
+			);
+			path = "Demo AR";
+			sourceTree = "<group>";
+		};
+		B91A20F517943DB500BCAF21 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B91A20F617943DB500BCAF21 /* Demo AR-Info.plist */,
+				B91A20F717943DB500BCAF21 /* InfoPlist.strings */,
+				B91A20FA17943DB500BCAF21 /* main.m */,
+				B91A20FC17943DB600BCAF21 /* Demo AR-Prefix.pch */,
+				B91A210017943DB600BCAF21 /* Default.png */,
+				B91A210217943DB600BCAF21 /* Default@2x.png */,
+				B91A210417943DB600BCAF21 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B91A211417943E1A00BCAF21 /* augmentedView */ = {
+			isa = PBXGroup;
+			children = (
+				B91A211517943E1A00BCAF21 /* AugmentedGeoViewController.h */,
+				B91A211617943E1A00BCAF21 /* AugmentedGeoViewController.m */,
+				B91A211717943E1A00BCAF21 /* AugmentedViewController.h */,
+				B91A211817943E1A00BCAF21 /* AugmentedViewController.m */,
+				B91A211917943E1A00BCAF21 /* CameraController.h */,
+				B91A211A17943E1A00BCAF21 /* CameraController.m */,
+				B91A211B17943E1A00BCAF21 /* MarkerView.h */,
+				B91A211C17943E1A00BCAF21 /* MarkerView.m */,
+				B91A211D17943E1A00BCAF21 /* radarView */,
+			);
+			path = augmentedView;
+			sourceTree = "<group>";
+		};
+		B91A211D17943E1A00BCAF21 /* radarView */ = {
+			isa = PBXGroup;
+			children = (
+				B91A211E17943E1A00BCAF21 /* Radar.h */,
+				B91A211F17943E1A00BCAF21 /* Radar.m */,
+				B91A212017943E1A00BCAF21 /* RadarViewPortView.h */,
+				B91A212117943E1A00BCAF21 /* RadarViewPortView.m */,
+			);
+			path = radarView;
+			sourceTree = "<group>";
+		};
+		B91A212817943E6D00BCAF21 /* guiControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B91A212917943E6D00BCAF21 /* PopUpWebView.h */,
+				B91A212A17943E6D00BCAF21 /* PopUpWebView.m */,
+				B91A212B17943E6D00BCAF21 /* ProgressHUD.h */,
+				B91A212C17943E6D00BCAF21 /* ProgressHUD.m */,
+				B91A212D17943E6D00BCAF21 /* PullRefreshTableViewController.h */,
+				B91A212E17943E6D00BCAF21 /* PullRefreshTableViewController.m */,
+				B91A212F17943E6D00BCAF21 /* WebViewController.h */,
+				B91A213017943E6D00BCAF21 /* WebViewController.m */,
+			);
+			path = guiControllers;
+			sourceTree = "<group>";
+		};
+		B91A213517943E9600BCAF21 /* reality */ = {
+			isa = PBXGroup;
+			children = (
+				B91A213617943E9600BCAF21 /* MapViewAnnotation.h */,
+				B91A213717943E9600BCAF21 /* MapViewAnnotation.m */,
+				B91A213817943E9600BCAF21 /* PoiItem.h */,
+				B91A213917943E9600BCAF21 /* PoiItem.m */,
+			);
+			path = reality;
+			sourceTree = "<group>";
+		};
+		B91A213C17943EA900BCAF21 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B91A213D17943EA900BCAF21 /* DataSource.h */,
+				B91A213E17943EA900BCAF21 /* DataSource.m */,
+				B91A213F17943EA900BCAF21 /* Position.h */,
+				B91A214017943EA900BCAF21 /* Position.m */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B91A214317943EE100BCAF21 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B91A214417943EE100BCAF21 /* buzz_logo.png */,
+				B91A214517943EE100BCAF21 /* buzz_logo_small.png */,
+				B91A214617943EE100BCAF21 /* circle.png */,
+				B91A214717943EE100BCAF21 /* HUDBackground.png */,
+				B91A214817943EE100BCAF21 /* icon_map.png */,
+				B91A214917943EE100BCAF21 /* logo.png */,
+				B91A214A17943EE100BCAF21 /* logo_mixare_round.png */,
+				B91A214B17943EE100BCAF21 /* mixare_512x512px.png */,
+				B91A214C17943EE100BCAF21 /* mixare_button.png */,
+				B91A214D17943EE100BCAF21 /* tabbarIcons */,
+				B91A215317943EE100BCAF21 /* twitter_logo.png */,
+				B91A215417943EE100BCAF21 /* twitter_logo_small.png */,
+				B91A215517943EE100BCAF21 /* wikipedia_logo.png */,
+				B91A215617943EE100BCAF21 /* wikipedia_logo_small.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		B91A214D17943EE100BCAF21 /* tabbarIcons */ = {
+			isa = PBXGroup;
+			children = (
+				B91A214E17943EE100BCAF21 /* camera.png */,
+				B91A214F17943EE100BCAF21 /* icon_datasource.png */,
+				B91A215017943EE100BCAF21 /* list.png */,
+				B91A215117943EE100BCAF21 /* map.png */,
+				B91A215217943EE100BCAF21 /* source.png */,
+			);
+			path = tabbarIcons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B91A20EA17943DB500BCAF21 /* Demo AR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B91A211117943DB600BCAF21 /* Build configuration list for PBXNativeTarget "Demo AR" */;
+			buildPhases = (
+				B91A20E717943DB500BCAF21 /* Sources */,
+				B91A20E817943DB500BCAF21 /* Frameworks */,
+				B91A20E917943DB500BCAF21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Demo AR";
+			productName = "Demo AR";
+			productReference = B91A20EB17943DB500BCAF21 /* Demo AR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B91A20E317943DB500BCAF21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JO;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Tactilapp.com;
+			};
+			buildConfigurationList = B91A20E617943DB500BCAF21 /* Build configuration list for PBXProject "Demo AR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B91A20E217943DB500BCAF21;
+			productRefGroup = B91A20EC17943DB500BCAF21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B91A20EA17943DB500BCAF21 /* Demo AR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B91A20E917943DB500BCAF21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91A20F917943DB500BCAF21 /* InfoPlist.strings in Resources */,
+				B91A210117943DB600BCAF21 /* Default.png in Resources */,
+				B91A210317943DB600BCAF21 /* Default@2x.png in Resources */,
+				B91A210517943DB600BCAF21 /* Default-568h@2x.png in Resources */,
+				B91A210B17943DB600BCAF21 /* JOViewController_iPhone.xib in Resources */,
+				B91A210E17943DB600BCAF21 /* JOViewController_iPad.xib in Resources */,
+				B91A215717943EE100BCAF21 /* buzz_logo.png in Resources */,
+				B91A215817943EE100BCAF21 /* buzz_logo_small.png in Resources */,
+				B91A215917943EE100BCAF21 /* circle.png in Resources */,
+				B91A215A17943EE100BCAF21 /* HUDBackground.png in Resources */,
+				B91A215B17943EE100BCAF21 /* icon_map.png in Resources */,
+				B91A215C17943EE100BCAF21 /* logo.png in Resources */,
+				B91A215D17943EE100BCAF21 /* logo_mixare_round.png in Resources */,
+				B91A215E17943EE100BCAF21 /* mixare_512x512px.png in Resources */,
+				B91A215F17943EE100BCAF21 /* mixare_button.png in Resources */,
+				B91A216017943EE100BCAF21 /* camera.png in Resources */,
+				B91A216117943EE100BCAF21 /* icon_datasource.png in Resources */,
+				B91A216217943EE100BCAF21 /* list.png in Resources */,
+				B91A216317943EE100BCAF21 /* map.png in Resources */,
+				B91A216417943EE100BCAF21 /* source.png in Resources */,
+				B91A216517943EE100BCAF21 /* twitter_logo.png in Resources */,
+				B91A216617943EE100BCAF21 /* twitter_logo_small.png in Resources */,
+				B91A216717943EE100BCAF21 /* wikipedia_logo.png in Resources */,
+				B91A216817943EE100BCAF21 /* wikipedia_logo_small.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B91A20E717943DB500BCAF21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91A20FB17943DB500BCAF21 /* main.m in Sources */,
+				B91A20FF17943DB600BCAF21 /* JOAppDelegate.m in Sources */,
+				B91A210817943DB600BCAF21 /* JOViewController.m in Sources */,
+				B91A212217943E1A00BCAF21 /* AugmentedGeoViewController.m in Sources */,
+				B91A212317943E1A00BCAF21 /* AugmentedViewController.m in Sources */,
+				B91A212417943E1A00BCAF21 /* CameraController.m in Sources */,
+				B91A212517943E1A00BCAF21 /* MarkerView.m in Sources */,
+				B91A212617943E1A00BCAF21 /* Radar.m in Sources */,
+				B91A212717943E1A00BCAF21 /* RadarViewPortView.m in Sources */,
+				B91A213117943E6D00BCAF21 /* PopUpWebView.m in Sources */,
+				B91A213217943E6D00BCAF21 /* ProgressHUD.m in Sources */,
+				B91A213317943E6D00BCAF21 /* PullRefreshTableViewController.m in Sources */,
+				B91A213417943E6D00BCAF21 /* WebViewController.m in Sources */,
+				B91A213A17943E9600BCAF21 /* MapViewAnnotation.m in Sources */,
+				B91A213B17943E9600BCAF21 /* PoiItem.m in Sources */,
+				B91A214117943EA900BCAF21 /* DataSource.m in Sources */,
+				B91A214217943EA900BCAF21 /* Position.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B91A20F717943DB500BCAF21 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B91A20F817943DB500BCAF21 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B91A210917943DB600BCAF21 /* JOViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B91A210A17943DB600BCAF21 /* en */,
+			);
+			name = JOViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		B91A210C17943DB600BCAF21 /* JOViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B91A210D17943DB600BCAF21 /* en */,
+			);
+			name = JOViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B91A210F17943DB600BCAF21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B91A211017943DB600BCAF21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B91A211217943DB600BCAF21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo AR/Demo AR-Prefix.pch";
+				INFOPLIST_FILE = "Demo AR/Demo AR-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B91A211317943DB600BCAF21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo AR/Demo AR-Prefix.pch";
+				INFOPLIST_FILE = "Demo AR/Demo AR-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B91A20E617943DB500BCAF21 /* Build configuration list for PBXProject "Demo AR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B91A210F17943DB600BCAF21 /* Debug */,
+				B91A211017943DB600BCAF21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B91A211117943DB600BCAF21 /* Build configuration list for PBXNativeTarget "Demo AR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B91A211217943DB600BCAF21 /* Debug */,
+				B91A211317943DB600BCAF21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B91A20E317943DB500BCAF21 /* Project object */;
+}
